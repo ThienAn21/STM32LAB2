@@ -89,13 +89,23 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_TIM_Base_Start_IT (& htim2 );
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  setTimer1(100);
+  setTimer2(100);
   while (1)
   {
+	  if(timer1_flag == 1){
+		  setTimer1(100);
+		  // do here
+	  }
+	  if(timer2_flag == 1){
+		  setTimer2(100);
+		  // do here
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -208,7 +218,9 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_TIM_PeriodElapsedCallback ( TIM_HandleTypeDef * htim ){
+	timerRun();
+}
 /* USER CODE END 4 */
 
 /**
