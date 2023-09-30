@@ -1,0 +1,2 @@
+display_dot.c:11:6:dot_on	8	static
+display_dot.c:15:6:dot_off	8	static
