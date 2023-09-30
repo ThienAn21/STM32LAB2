@@ -1,0 +1,5 @@
+display7seg.c:11:6:display7seg	16	static
+display7seg.c:108:6:seg1_on	8	static
+display7seg.c:111:6:seg2_on	8	static
+display7seg.c:114:6:seg1_off	8	static
+display7seg.c:117:6:seg2_off	8	static
