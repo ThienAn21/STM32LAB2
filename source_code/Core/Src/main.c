@@ -98,6 +98,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  clock_run();
 	  led_blinky(LED_RED_GPIO_Port, LED_RED_Pin, 100);
 	  control_7_seg();
 	  control_dot();
