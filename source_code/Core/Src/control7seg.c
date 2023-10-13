@@ -9,9 +9,9 @@
 #include "display7seg.h"
 
 void control_7_seg(){
-	switch(status){
+	switch(status_7seg){
 	case INIT:
-		status = SEG1_ON;
+		status_7seg = SEG1_ON;
 		setTimer1(50);
 		break;
 	case SEG1_ON:
@@ -19,7 +19,7 @@ void control_7_seg(){
 		seg2_off();
 		display7seg(1);
 		if(timer1_flag == 1){
-			status = SEG2_ON;
+			status_7seg = SEG2_ON;
 			setTimer1(50);
 		}
 		break;
@@ -28,7 +28,7 @@ void control_7_seg(){
 		seg2_on();
 		display7seg(2);
 		if(timer1_flag == 1){
-			status = SEG1_ON;
+			status_7seg = SEG1_ON;
 			setTimer1(50);
 		}
 		break;

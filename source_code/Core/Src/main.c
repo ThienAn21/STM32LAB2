@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 #include "control7seg.h"
 #include "software_timer.h"
+#include "led_blinky.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -98,7 +99,7 @@ int main(void)
 
   while (1)
   {
-	  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, RESET);
+	  led_blinky(LED_RED_GPIO_Port, LED_RED_Pin, 100);
 	  control_7_seg();
     /* USER CODE END WHILE */
 

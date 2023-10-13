@@ -8,4 +8,5 @@
 
 #include "global.h"
 
-status = INIT;
+status_7seg = INIT;
+status_led = INIT;

@@ -11,8 +11,10 @@
 #define INIT 1
 #define SEG1_ON 2
 #define SEG2_ON 3
+#define Toggle 4
 
-extern int status;
+extern int status_led;
+extern int status_7seg;
 
 
 #endif /* INC_GLOBAL_H_ */
