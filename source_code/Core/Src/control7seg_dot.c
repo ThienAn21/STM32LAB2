@@ -40,7 +40,7 @@ void control_7_seg(){
 	switch(status_seg){
 	case INIT:
 		status_seg = SEG1_ON;
-		setTimer1(50);
+		setTimer1(25);
 		break;
 	case SEG1_ON:
 		seg1_on();
@@ -50,7 +50,7 @@ void control_7_seg(){
 		update7SEG(0);
 		if(timer1_flag == 1){
 			status_seg = SEG2_ON;
-			setTimer1(50);
+			setTimer1(25);
 		}
 		break;
 	case SEG2_ON:
@@ -61,7 +61,7 @@ void control_7_seg(){
 		update7SEG(1);
 		if(timer1_flag == 1){
 			status_seg = SEG3_ON;
-			setTimer1(50);
+			setTimer1(25);
 		}
 		break;
 	case SEG3_ON:
@@ -72,7 +72,7 @@ void control_7_seg(){
 		update7SEG(2);
 		if(timer1_flag == 1){
 			status_seg = SEG4_ON;
-			setTimer1(50);
+			setTimer1(25);
 		}
 		break;
 	case SEG4_ON:
@@ -83,7 +83,7 @@ void control_7_seg(){
 		update7SEG(3);
 		if(timer1_flag == 1){
 			status_seg = SEG1_ON;
-			setTimer1(50);
+			setTimer1(25);
 		}
 		break;
 	default:

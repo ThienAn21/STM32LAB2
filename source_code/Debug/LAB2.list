@@ -165,8 +165,8 @@ void control_7_seg(){
  80001d8:	4b34      	ldr	r3, [pc, #208]	; (80002ac <control_7_seg+0xfc>)
  80001da:	2202      	movs	r2, #2
  80001dc:	601a      	str	r2, [r3, #0]
-		setTimer1(50);
- 80001de:	2032      	movs	r0, #50	; 0x32
+		setTimer1(25);
+ 80001de:	2019      	movs	r0, #25
  80001e0:	f000 fbe4 	bl	80009ac <setTimer1>
 		break;
  80001e4:	e060      	b.n	80002a8 <control_7_seg+0xf8>
@@ -191,8 +191,8 @@ void control_7_seg(){
  8000204:	4b29      	ldr	r3, [pc, #164]	; (80002ac <control_7_seg+0xfc>)
  8000206:	2203      	movs	r2, #3
  8000208:	601a      	str	r2, [r3, #0]
-			setTimer1(50);
- 800020a:	2032      	movs	r0, #50	; 0x32
+			setTimer1(25);
+ 800020a:	2019      	movs	r0, #25
  800020c:	f000 fbce 	bl	80009ac <setTimer1>
 		}
 		break;
@@ -218,8 +218,8 @@ void control_7_seg(){
  8000230:	4b1e      	ldr	r3, [pc, #120]	; (80002ac <control_7_seg+0xfc>)
  8000232:	2204      	movs	r2, #4
  8000234:	601a      	str	r2, [r3, #0]
-			setTimer1(50);
- 8000236:	2032      	movs	r0, #50	; 0x32
+			setTimer1(25);
+ 8000236:	2019      	movs	r0, #25
  8000238:	f000 fbb8 	bl	80009ac <setTimer1>
 		}
 		break;
@@ -245,8 +245,8 @@ void control_7_seg(){
  800025c:	4b13      	ldr	r3, [pc, #76]	; (80002ac <control_7_seg+0xfc>)
  800025e:	2205      	movs	r2, #5
  8000260:	601a      	str	r2, [r3, #0]
-			setTimer1(50);
- 8000262:	2032      	movs	r0, #50	; 0x32
+			setTimer1(25);
+ 8000262:	2019      	movs	r0, #25
  8000264:	f000 fba2 	bl	80009ac <setTimer1>
 		}
 		break;
@@ -272,8 +272,8 @@ void control_7_seg(){
  8000288:	4b08      	ldr	r3, [pc, #32]	; (80002ac <control_7_seg+0xfc>)
  800028a:	2202      	movs	r2, #2
  800028c:	601a      	str	r2, [r3, #0]
-			setTimer1(50);
- 800028e:	2032      	movs	r0, #50	; 0x32
+			setTimer1(25);
+ 800028e:	2019      	movs	r0, #25
  8000290:	f000 fb8c 	bl	80009ac <setTimer1>
 		}
 		break;
