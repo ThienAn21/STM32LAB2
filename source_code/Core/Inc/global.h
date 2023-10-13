@@ -17,8 +17,10 @@
 #define DOT_ON 6
 #define DOT_OFF 7
 
+#define Toggle 8
 
 extern int status_seg;
 extern int status_dot;
+extern int status_led;
 
 #endif /* INC_GLOBAL_H_ */

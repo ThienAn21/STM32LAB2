@@ -9,3 +9,4 @@
 
 status_seg = INIT;
 status_dot = INIT;
+status_led = INIT;
