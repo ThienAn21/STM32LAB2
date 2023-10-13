@@ -7,8 +7,10 @@
 C_SRCS += \
 ../Core/Src/clock.c \
 ../Core/Src/control7seg_dot.c \
+../Core/Src/control_led_matrix.c \
 ../Core/Src/display7seg.c \
 ../Core/Src/display_dot.c \
+../Core/Src/display_led_matrix.c \
 ../Core/Src/global.c \
 ../Core/Src/led_blinky.c \
 ../Core/Src/main.c \
@@ -22,8 +24,10 @@ C_SRCS += \
 OBJS += \
 ./Core/Src/clock.o \
 ./Core/Src/control7seg_dot.o \
+./Core/Src/control_led_matrix.o \
 ./Core/Src/display7seg.o \
 ./Core/Src/display_dot.o \
+./Core/Src/display_led_matrix.o \
 ./Core/Src/global.o \
 ./Core/Src/led_blinky.o \
 ./Core/Src/main.o \
@@ -37,8 +41,10 @@ OBJS += \
 C_DEPS += \
 ./Core/Src/clock.d \
 ./Core/Src/control7seg_dot.d \
+./Core/Src/control_led_matrix.d \
 ./Core/Src/display7seg.d \
 ./Core/Src/display_dot.d \
+./Core/Src/display_led_matrix.d \
 ./Core/Src/global.d \
 ./Core/Src/led_blinky.d \
 ./Core/Src/main.d \

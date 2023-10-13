@@ -20,9 +20,15 @@
 #define Toggle 8
 
 #define Clock_on 9
+
+#define Matrix_on 10
+
 extern int status_seg;
 extern int status_dot;
 extern int status_led;
 extern int status_clock;
-extern int hour, minute, second;
+extern int status_matrix;
+extern int hour;
+extern int minute;
+extern int second;
 #endif /* INC_GLOBAL_H_ */
