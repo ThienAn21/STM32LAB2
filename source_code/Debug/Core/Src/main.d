@@ -26,7 +26,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/control7seg_dot.h ../Core/Inc/software_timer.h \
  ../Core/Inc/led_blinky.h ../Core/Inc/main.h ../Core/Inc/software_timer.h \
  ../Core/Inc/global.h ../Core/Inc/control_led_matrix.h \
- ../Core/Inc/display_led_matrix.h
+ ../Core/Inc/display_led_matrix.h ../Core/Inc/clock.h \
+ ../Core/Inc/control7seg_dot.h
 
 ../Core/Inc/main.h:
 
@@ -93,3 +94,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/control_led_matrix.h:
 
 ../Core/Inc/display_led_matrix.h:
+
+../Core/Inc/clock.h:
+
+../Core/Inc/control7seg_dot.h:

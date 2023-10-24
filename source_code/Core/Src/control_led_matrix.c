@@ -19,8 +19,8 @@ void controlLedMatrix(){
 			break;
 		case Matrix_on:
 			  if (timer5_flag == 1){
-				  setTimer5(1);
-				  displayLedMatrix(trans, index_led);
+				  setTimer5(5);
+				  displayLedMatrix(0, index_led);
 				  index_led++;
 				  if (index_led >=8){
 					  index_led = 0;
@@ -34,12 +34,7 @@ void controlLedMatrix(){
 				  }
 			  }
 			break;
-		case 2:
 
-			break;
-		case 3:
-
-			break;
 		default:
 			break;
 	}

@@ -26,6 +26,7 @@
 #include "software_timer.h"
 #include "led_blinky.h"
 #include "control_led_matrix.h"
+#include "clock.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -101,7 +102,7 @@ int main(void)
   {
 	  controlLedMatrix();
 	  clock_run();
-	  led_blinky(LED_RED_GPIO_Port, LED_RED_Pin, 100);
+	  led_blinky(100);
 	  control_7_seg();
 	  control_dot();
     /* USER CODE END WHILE */
