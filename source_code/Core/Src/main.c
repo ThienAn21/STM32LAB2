@@ -25,6 +25,7 @@
 #include "control7seg_dot.h"
 #include "software_timer.h"
 #include "led_blinky.h"
+#include "clock.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,7 +100,7 @@ int main(void)
   while (1)
   {
 	  clock_run();
-	  led_blinky(LED_RED_GPIO_Port, LED_RED_Pin, 100);
+	  led_blinky(100);
 	  control_7_seg();
 	  control_dot();
     /* USER CODE END WHILE */

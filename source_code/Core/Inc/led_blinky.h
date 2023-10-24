@@ -10,7 +10,7 @@
 #include "main.h"
 #include "software_timer.h"
 #include "global.h"
-void led_blinky(GPIO_TypeDef* port, uint16_t* pins, int time);
+void led_blinky(int time);
 
 
 #endif /* INC_LED_BLINKY_H_ */
