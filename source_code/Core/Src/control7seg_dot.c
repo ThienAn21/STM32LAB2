@@ -37,9 +37,11 @@ void update7SEG ( int index ){
 
 
 void control_7_seg(){
+	if(index_led >= 4) index_led = 0;
 	switch(status_seg){
 	case INIT:
 		status_seg = SEG1_ON;
+		update7SEG(index_led++);
 		setTimer1(50);
 		break;
 	case SEG1_ON:
@@ -47,8 +49,8 @@ void control_7_seg(){
 		seg2_off();
 		seg3_off();
 		seg4_off();
-		update7SEG(0);
 		if(timer1_flag == 1){
+			update7SEG(index_led++);
 			status_seg = SEG2_ON;
 			setTimer1(50);
 		}
@@ -58,8 +60,8 @@ void control_7_seg(){
 		seg2_on();
 		seg3_off();
 		seg4_off();
-		update7SEG(1);
 		if(timer1_flag == 1){
+			update7SEG(index_led++);
 			status_seg = SEG3_ON;
 			setTimer1(50);
 		}
@@ -69,8 +71,8 @@ void control_7_seg(){
 		seg2_off();
 		seg3_on();
 		seg4_off();
-		update7SEG(2);
 		if(timer1_flag == 1){
+			update7SEG(index_led++);
 			status_seg = SEG4_ON;
 			setTimer1(50);
 		}
@@ -80,8 +82,8 @@ void control_7_seg(){
 		seg2_off();
 		seg3_off();
 		seg4_on();
-		update7SEG(3);
 		if(timer1_flag == 1){
+			update7SEG(index_led++);
 			status_seg = SEG1_ON;
 			setTimer1(50);
 		}
