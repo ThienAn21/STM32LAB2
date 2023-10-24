@@ -99,7 +99,7 @@ int main(void)
 
   while (1)
   {
-	  led_blinky(LED_RED_GPIO_Port, LED_RED_Pin, 100);
+	  led_blinky(100);
 	  control_7_seg();
 	  control_dot();
     /* USER CODE END WHILE */
