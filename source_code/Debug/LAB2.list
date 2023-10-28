@@ -544,7 +544,7 @@ void control_dot(){
 
 #include "control_led_matrix.h"
 int index_led = 0;
-int trans = 7;
+int trans = 2;
 
 void controlLedMatrix(){
  800043c:	b580      	push	{r7, lr}
@@ -587,11 +587,11 @@ void controlLedMatrix(){
 				  setTimer5(5);
  8000472:	2005      	movs	r0, #5
  8000474:	f000 fce0 	bl	8000e38 <setTimer5>
-				  displayLedMatrix(0, index_led);
+				  displayLedMatrix(2, index_led);
  8000478:	4b15      	ldr	r3, [pc, #84]	; (80004d0 <controlLedMatrix+0x94>)
  800047a:	681b      	ldr	r3, [r3, #0]
  800047c:	4619      	mov	r1, r3
- 800047e:	2000      	movs	r0, #0
+ 800047e:	2002      	movs	r0, #2
  8000480:	f000 fa96 	bl	80009b0 <displayLedMatrix>
 				  index_led++;
  8000484:	4b12      	ldr	r3, [pc, #72]	; (80004d0 <controlLedMatrix+0x94>)

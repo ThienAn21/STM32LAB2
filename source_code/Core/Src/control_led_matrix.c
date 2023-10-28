@@ -7,7 +7,7 @@
 
 #include "control_led_matrix.h"
 int index_led = 0;
-int trans = 7;
+int trans = 2;
 
 void controlLedMatrix(){
 	switch (status_matrix) {
@@ -20,7 +20,7 @@ void controlLedMatrix(){
 		case Matrix_on:
 			  if (timer5_flag == 1){
 				  setTimer5(5);
-				  displayLedMatrix(0, index_led);
+				  displayLedMatrix(2, index_led);
 				  index_led++;
 				  if (index_led >=8){
 					  index_led = 0;
